@@ -48,7 +48,7 @@ function Projects() {
   });
 
   return (
-    <div className="relative min-h-screen bg-slate-950 text-slate-100 px-4 py-8">
+    <div className="relative min-h-screen bg-slate-950 text-slate-100 px-4 py-8 pt-20">
       {/* Back Button */}
       <button
         onClick={() => navigate("/")}
