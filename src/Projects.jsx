@@ -17,9 +17,13 @@ function Projects() {
       try {
         setLoading(true);
         setError("");
-        const res = await axios.get("https://mernlog-backend.vercel.app/api/projects", {
-          withCredentials: true,
-        });
+        const res = await axios.get(
+          "https://mernlog-backend.vercel.app/api/projects",
+          {
+            withCredentials: true,
+          }
+        );
+        console.log(res.data);
         setProjects(res.data || []);
       } catch (err) {
         console.error(err);
